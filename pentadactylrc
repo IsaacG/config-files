@@ -1,0 +1,2 @@
+set autocomplete=
+set editor='uxterm -e vim -c set\ spell\ modified -f +<line> <file>'

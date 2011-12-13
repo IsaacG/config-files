@@ -1,0 +1,16 @@
+# Touchpad settings
+xinput set-int-prop "ETPS/2 Elantech Touchpad" "Synaptics Two-Finger Pressure" 32 10
+# Touchpad - width for two fingers for scrolling
+xinput set-int-prop "ETPS/2 Elantech Touchpad" "Synaptics Two-Finger Width" 32 8
+xinput set-int-prop "ETPS/2 Elantech Touchpad" "Two-Finger Scrolling" 8 1
+# Touchpad - scroll with two fingers - horiz and vert
+xinput set-int-prop "ETPS/2 Elantech Touchpad" "Synaptics Two-Finger Scrolling" 8 1 1
+xinput set-int-prop "ETPS/2 Elantech Touchpad" "Synaptics Jumpy Cursor Threshold" 32 150
+# Touchpad - mouse speed
+xinput set-float-prop 'ETPS/2 Elantech Touchpad' 'Device Accel Velocity Scaling' 20
+# Touchpad - vert scroll with the right edge
+xinput set-int-prop 'ETPS/2 Elantech Touchpad' 'Synaptics Edge Scrolling' 8 1 0 0
+# Touchpad - MinSpeed MaxSpeed AccelFactor TrackstickSpeed
+xinput set-float-prop 'ETPS/2 Elantech Touchpad' 'Synaptics Move Speed' 1.000000 2 0.146843 40.000000
+# Touchpad - Enable circular scrolling
+xinput set-int-prop 'ETPS/2 Elantech Touchpad' 'Synaptics Circular Scrolling' 8 1

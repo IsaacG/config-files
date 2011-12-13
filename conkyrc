@@ -1,0 +1,21 @@
+cpu_avg_samples 2
+net_avg_samples 2
+update_interval 2
+out_to_console yes
+out_to_x no
+background no
+update_interval 2
+total_run_times 0
+use_spacer none
+
+# temp, fan
+
+TEXT
+${battery} ${battery_time} \
+C ${cpu}%  R ${memperc}% S ${swapperc}% || \
+IO ${diskio} NET ${downspeed wlan0} ${upspeed wlan0}|| \
+${execi 15 sensors -u|sed -n '4{s/.*: //;s/\..*//p}'}C \
+${execi 60 ~/bin/gmail_count}G \
+[$time]
+
+

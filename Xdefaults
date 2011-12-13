@@ -1,0 +1,46 @@
+UXTerm*faceName:             xft:Bitstream Vera Sans Mono:pixelsize=18
+UXTerm*eightBitInput: false
+UXTerm*metaSendsEscape: true
+UXTerm*charClass: 33:48,35:48,37:48,43:48,45-47:48,58:48,64:48,95:48,126:48,63:48,61:48
+
+*background:       #000000
+*foreground:       #66cc33
+*scrollBar:        false
+*saveLines:	5000
+
+Xft*dpi:                96
+Xft*antialias:          true
+Xft*hinting:            full
+
+URxvt.transparent:   false
+URxvt.tintColor:     black
+URxvt.shading:       18 
+
+urxvt.font:          xft:Inconsolata:pixelsize=22
+urxvt.termName:      rxvt-unicode
+ 
+!black
+*color0:      #000000
+*color8:      #666666
+!red
+*color1:      #9e1828
+*color9:      #cc0000
+!green
+*color2:      #339900
+*color10:     #c5f779
+!yellow
+*color3:      #968a38
+*color11:     #fff796
+!blue
+*color4:      #3333ff
+*color12:     #4186be
+!magenta
+*color5:      #963c59
+*color13:     #cf9ebe
+!cyan
+*color6:      #418179
+*color14:     #71bebe
+!white
+*color7:      #cccccc
+*color15:     #ffffff
+

@@ -1,0 +1,79 @@
+# To specify a key, you can use 'xbindkeys --key' or
+# 'xbindkeys --multikey' and put one of the two lines in this file.
+#
+# The format of a command line is:
+#    "command to start"
+#       associated key
+#
+#
+# A list of keys is in /usr/include/X11/keysym.h and in
+# /usr/include/X11/keysymdef.h
+# The XK_ is not needed.
+#
+# List of modifier:
+#   Release, Control, Shift, Mod1 (Alt), Mod2 (NumLock),
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
+#
+
+# The release modifier is not a standard X modifier, but you can
+# use it if you want to catch release events instead of press events
+
+# By defaults, xbindkeys does not pay attention with the modifiers
+# NumLock, CapsLock and ScrollLock.
+# Uncomment the lines above if you want to pay attention to them.
+
+#keystate_numlock = enable
+#keystate_capslock = enable
+#keystate_scrolllock= enable
+
+# specify a mouse button
+#"xterm"
+#  control + b:2
+
+"sh -c 'sleep 0.3 ; /usr/bin/xdotool click 2'"
+  Mod2 + XF86HomePage
+
+"sudo amixer set Master 5%-"
+  Mod2 + XF86Tools
+"sudo amixer set Master 5%+"
+  Mod2 + XF86AudioPlay
+"sudo amixer set Headphone toggle"
+  Mod2 + XF86AudioMute
+
+"/usr/bin/slock"
+  Control+Alt+Mod2 + l
+
+"xrandr --output VGA-0 --mode 1680x1050 --output LVDS --off ; xmodmap -e 'pointer = 3 2 1' ; numlockx on"
+  Control+Alt+Mod2 + v
+"xrandr --output VGA-0 --off --output LVDS --mode 1024x600 ; xmodmap -e 'pointer = 1 2 3' ; numlockx off"
+  Control+Shift+Alt+Mod2 + v
+
+"firefox $(xclip -o)"
+  Control+Alt+Mod2 + o
+
+"cssh c25 c26 c27 c28 c29 c30"
+  Control+Alt+Mod2+g
+
+"/usr/bin/firefox -no-remote -P clean"
+  Control+Shift+Alt+Mod2 + f
+"/usr/bin/firefox -no-remote -P default"
+  Control+Alt+Mod2 + f
+
+"(sudo netcfg all-suspend ; sudo /usr/local/bin/suspend_to_ram ; sudo netcfg all-resume)"
+  Control+Shift+Alt+Mod2 + w
+
+"/usr/bin/chromium"
+  Control+Alt+Mod2 + h
+
+"/home/goodi/bin/alarm"
+  Control+Alt+Mod2 + a
+
+"amixer -c1 sset Master 3%-"
+  Mod2 + XF86AudioLowerVolume
+"amixer -c1 sset Master 3%+"
+  Mod2 + XF86AudioRaiseVolume
+"amixer -c1 sset Master 3%+"
+  Control+Alt+Mod2 + Up
+"amixer -c1 sset Master 3%-"
+  Control+Alt+Mod2 + Down
+
