@@ -62,6 +62,12 @@
 "(sudo netcfg all-suspend ; sudo /usr/local/bin/suspend_to_ram ; sudo netcfg all-resume)"
   Control+Shift+Alt+Mod2 + w
 
+"echo 6 | /home/goodi/bin/runescape"
+  Control+Alt+Mod2 + r
+
+"pkill runescape"
+  Control+Alt+Mod2 + k
+
 "/usr/bin/chromium"
   Control+Alt+Mod2 + h
 
