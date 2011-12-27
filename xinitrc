@@ -41,5 +41,7 @@ xrandr --output DVI-1 --auto
 xrandr --output DVI-0 --auto --output DVI-1 --auto
 xrandr --output DVI-0 --auto --output DVI-1 --auto --output DVI-0 --right-of DVI-1
 
+# Disable beep
+xset -b
 
 exec dwm
