@@ -14,3 +14,5 @@ xinput set-int-prop 'ETPS/2 Elantech Touchpad' 'Synaptics Edge Scrolling' 8 1 0 
 xinput set-float-prop 'ETPS/2 Elantech Touchpad' 'Synaptics Move Speed' 1.000000 2 0.146843 40.000000
 # Touchpad - Enable circular scrolling
 xinput set-int-prop 'ETPS/2 Elantech Touchpad' 'Synaptics Circular Scrolling' 8 1
+# Enable palm detection while typing
+xinput set-int-prop 'ETPS/2 Elantech Touchpad' 'PalmDetect' 8 1
