@@ -43,7 +43,7 @@
 "/usr/bin/slock"
   Control+Alt+Mod2 + l
 
-"xrandr --output VGA-0 --mode 1680x1050 --output LVDS --off ; xmodmap -e 'pointer = 3 2 1' ; numlockx on"
+"xrandr --output VGA-0 --mode 1680x1050 --output LVDS --off ; xmodmap -e 'pointer = 3 2 1' ; numlockx on ; xset -b"
   Control+Alt+Mod2 + v
 "xrandr --output VGA-0 --off --output LVDS --mode 1024x600 ; xmodmap -e 'pointer = 1 2 3' ; numlockx off"
   Control+Shift+Alt+Mod2 + v
