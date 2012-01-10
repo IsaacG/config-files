@@ -6,4 +6,5 @@ conky | while read -r; do xsetroot -name "$REPLY"; done & # Status bar clock etc
 # Anti-beep
 xset -b
 
+numlockx on
 exec dwm
